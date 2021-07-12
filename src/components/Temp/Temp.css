@@ -1,0 +1,17 @@
+.Temp {
+  font-size: 1em;
+  margin: 1em 0;
+  color: #212529;
+}
+
+.Temp span {
+  margin: 0 0.3em;
+}
+
+.Temp span:nth-child(2) {
+  color: #999;
+}
+
+.Temp .min {
+  font-weight: 700;
+}
