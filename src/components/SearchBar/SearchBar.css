@@ -1,0 +1,54 @@
+.SearchBar {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.SearchBar input {
+  border: none;
+  margin-right: 1em;
+  height: 38px;
+  padding: 0.2em 1em;
+  border-bottom: 1px solid #aaa;
+}
+
+.SearchBar input:focus {
+  outline: 0;
+}
+
+.SearchBar .SearchBarChilds {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.SearchBar .SearchBarChilds h5 {
+  color: #555 !important;
+}
+.SearchBar .SearchBarChilds .formSearchCity {
+  display: flex;
+}
+@media (min-width: 1399px) {
+  .SearchBar {
+    width: 30%;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 750px) {
+  .SearchBar .SearchBarChilds .formSearchCity {
+    flex-direction: column;
+  }
+  .SearchBar input {
+    margin-right: 0;
+  }
+  .SearchBar .SearchBarChilds button {
+    margin-top: 1em;
+  }
+  .SearchBar .SearchBarChilds h5 {
+    font-size: 1em;
+  }
+}
